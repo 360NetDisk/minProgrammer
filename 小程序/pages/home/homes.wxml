@@ -1,0 +1,6 @@
+<!--pages/home/homes.wxml-->
+<text>pages/home/homes.wxml</text>
+<text>{{msg}}</text>
+ <view class="msg">
+    <text class="msg">{{msg}}</text>
+  </view>

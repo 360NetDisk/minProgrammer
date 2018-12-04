@@ -1,0 +1,35 @@
+
+<scroll-view class="c-minheight wx-scroll-view_6Bnkj2" data-c_e_id="wx_scroll_view_fcc22f86" lower-threshold="50" scroll-y="True" style="overflow-x: hidden; overflow-y: auto; " upper-threshold="50">
+ 
+   
+    <navigator url="../detail/index?objectId={{1}}" >
+      <button class='btn'  >开放办公室
+    </button>
+    </navigator>
+       
+     <navigator url="../detail/index?objectId={{2}}"> 
+      
+      <button class='btn' >餐厅区域
+    </button>
+    
+   </navigator> 
+        <navigator url="../detail/index?objectId={{3}}">
+
+       <button class='btn'  >卫生间区域
+    </button>
+    
+    </navigator>
+        <navigator url="../detail/index?objectId={{4}}">
+
+      
+      <button class='btn'  >会议室区域
+    </button>
+    
+    </navigator>
+
+    
+    
+    
+   
+    
+</scroll-view>

@@ -1,0 +1,4 @@
+/* pages/home/homes.wxss */
+.msg{
+  margin-top: 200px;
+}

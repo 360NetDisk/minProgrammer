@@ -1,0 +1,89 @@
+<import src="../../style/footer.wxml" />
+
+  <view class='weui-form-item'>
+  <form bindsubmit="formSubmit">
+    <view class="weui-form-preview">
+      <view class="weui-form-preview__hd"> 
+        <view class="weui-form-preview__item"> 
+        <view  class="weui-form-preview__label"> 
+        <text class="tex" > {{text}}
+    </text>  
+
+ 
+      
+        </view> 
+             <view class="max"  bindtap="powerDrawer"  data-statu="open">
+       自定义 </view>
+
+       </view>
+      </view>
+<block wx:for="{{items}}" wx:for-index='key' wx:for-item='item'>
+<view class="weui-form-preview">
+     <view class="weui-form-preview__hd">
+        <view class="weui-form-preview__item">
+        <view class="weui-form-preview__label" > 
+
+  <view class="maxbox"  bindtap="imgchange" id="{{key}}" data-statu="open">
+   <!-- <view class="maxbox"  bindtap="imgchange"  id="{{key}}" bindtap="powerDrawer" data-statu="open"> -->
+    <text class="nums"> {{item.questions}} </text>
+
+  </view>
+
+  <!-- <button class="b" bindtap="powerDrawer" data-statu="open">提交</button>  -->
+</view>
+</view>
+ </view> 
+ 
+</view>
+
+
+</block>
+
+
+
+</view> 
+
+ </form>
+</view>
+<!-- 
+<view class="btn" bindtap="powerDrawer" data-statu="open">button</view>   -->
+  
+<!--mask-->  
+<view class="drawer_screen" bindtap="powerDrawer" data-statu="close" wx:if="{{showModalStatus}}"></view>  
+<!--content-->  
+<!--使用animation属性指定需要执行的动画-->  
+<view animation="{{animationData}}" class="drawer_box" wx:if="{{showModalStatus}}">  
+  
+
+        <view class="hight">
+        <view class="section__title">请选择站点:</view>
+        <checkbox-group name="checkbox" bindchange="siteselect">
+            <label><checkbox value="50" />50</label>
+            <label><checkbox value="51" />51</label>
+            <label><checkbox value="52" />52</label> 
+        </checkbox-group>
+    <!-- </view> -->
+    <!-- </view>   -->
+  
+ 
+    <view class="top grid">  
+      <label class="title col-0">内容</label>  
+      <input class="input_base input_h30 col-1" bindinput="quetion" value="{{quetion}}"></input> <text class="chose">*必填</text>
+    </view>  
+        <view class="top grid">  
+      <label class="title col-0">姓名</label>  
+      <input class="input_base input_h30 col-1" bindinput="name" value=""></input> 
+    </view> 
+        <view class="top grid">  
+      <label class="title col-0">联系方式</label>  
+      <input class="input_base input_h30 col-1" bindinput="phone" value=""></input> 
+    </view> 
+  </view>  
+  <view>
+  <view class="btn_ok" bindtap="powerDrawer" data-statu="close"  > 取消  </view> 
+   <view class="btn_ok" bindtap="powerDrawer"   data-id='1' > 确认提交</view> 
+  </view>
+   
+</view>
+
+

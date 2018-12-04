@@ -1,0 +1,73 @@
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique"  bindtap="navbarTap" >{{item}}</text>
+</view>
+ 
+<!--首页-->
+<view hidden="{{currentTab!==0}}">
+<view class="c-minheight wx-view_section" data-c_e_id="wx_view_1295b15a" wx:for="{{results}}" wx:for-index='key' >
+    <view class="commentlistitem" data-c_e_id="wx_view_16d0f86f">
+    <view class="c-minheight wx-view_WnUrtw" data-c_e_id="wx_view_66505bdf"> 
+    <!-- <view class="wx-view_F9ISUC" data-c_e_id="wx_view27217bec">   -->
+    
+    <!-- <navigator name="tex" > class="wx-text_71u3gA"   -->
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text5fe6919d" >用户：{{item.username}} {{item.name}} {{item.phone}}</text>  
+    
+    <!-- </navigator>   -->
+    <!-- </view >  -->
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" > 位置：{{item.questionid}}{{item.questionaa}}  </text> 
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" >问题描述： {{item.questiontext}}  </text> 
+ <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">  
+    <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">    
+   
+    </view>  
+
+            
+    </view>
+
+  <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">  
+    <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">    
+   
+    </view>  <text class="listitem_creattime" data-c_e_id="wx_text8c8804b3"> {{item.createdAt}}  </text> 
+    </view>
+      <view class="weui-media-box__info__meta weui-media-box__info__operate">
+                <icon type="cancel dels" size="16"></icon>
+                <text class="del" catchtap="delete" id="{{key}}" >解决</text> </view>
+     
+
+     </view>
+    </view> 
+</view>
+</view>
+
+<view hidden="{{currentTab!==1}}">
+  <view class="c-minheight wx-view_section" data-c_e_id="wx_view_1295b15a" wx:for="{{result}}" wx:for-index='key'> 
+    <view class="commentlistitem" data-c_e_id="wx_view_16d0f86f">
+    <view class="c-minheight wx-view_WnUrtw" data-c_e_id="wx_view_66505bdf"> 
+    <!-- <view class="wx-view_F9ISUC" data-c_e_id="wx_view27217bec">   -->
+    
+    <!-- <navigator name="tex" > class="wx-text_71u3gA"   -->
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text5fe6919d" >用户：{{item.username}}  </text>  
+    
+    <!-- </navigator>   -->
+    <!-- </view >  -->
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" > 位置：{{item.questionid}}{{item.questionaa}}  </text> 
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" >问题描述： {{item.questiontext}}  </text> 
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" >解决者： {{item.deletename}}  </text> 
+   <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">  
+    <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f"> 
+    </view>  
+
+            
+    </view>
+
+  <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">  
+    <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">    
+   
+    </view>  <text class="listitem_creattime" data-c_e_id="wx_text8c8804b3"> {{item.createdAt}}  
+    
+    </text> 
+    </view>
+</view>
+    </view> 
+</view>  
+</view>

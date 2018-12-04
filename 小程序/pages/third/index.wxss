@@ -1,0 +1,233 @@
+/* pages/third/index.wxss */
+/* page { 
+    background-color: rgb(20, 20, 20);  
+} */
+.nums
+{
+color: rgba(44, 196, 216, 0.644);
+}
+.tex
+{
+font-weight: 700;
+color: rgb(20, 20, 20);
+}.section
+{ border:1px solid #ccc;margin:20px auto;width:100%;font-size:15px;}
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.add_layer{width:100%;height:100%;background:rgba(66, 69, 72, 0.74);position:fixed;left:0;top:0;}
+.add_layer input,.add_layer textarea,.add_layer button{width:80%;margin:0 auto;margin:15px auto;font-size:14px;padding:10rpx;}
+.add_layer input,.add_layer textarea{
+  background:#fff;
+}
+.diary_list{border-bottom:1px solid #ccc;margin:0px 0;padding:10px;position:relative;}
+.diary_list text{font-size:16px;color:#1e1e1e;}
+.diary_list view{font-size:14px;padding:5px 0}
+.diary_list button{
+  position:absolute;
+  right:15px;
+  top:12px;
+}
+.diary_list button.modify{right:90px;}
+
+
+.weui-media-box__info__operate{
+  float:right;
+  color:#1e1e1e;
+  padding-right:0em;
+
+}
+.weui-media-box__info__operate .del{
+  margin-right: 15px;
+}
+.toWrite {
+width:100rpx;
+height:100rpx;
+display: block;
+/*background:url("/image/add.png") no-repeat;*/
+padding:0;
+background-size:cover;
+position:fixed;
+right:74rpx;
+bottom:100rpx;
+border-radius: 50%;
+z-index: 999;
+}
+.weui-media-box{
+  padding-bottom: 0px;
+}
+.weui-media-time{
+  width:220rpx;
+  height: 1em;
+  overflow: hidden;
+}
+
+.weui-cells__title{
+  text-align: left;
+}
+textarea,input{
+  text-align: left;
+  color:#1e1e1e;
+}
+.weui-cells {
+  border:1px solid #3891f8;
+}
+.weui-cells__title{
+  padding-left: 0px;
+  color:#1e1e1e;
+}
+.weui-dialog__ft button{
+  background: none;
+  padding: 0px;
+  margin: 0px;
+}
+form .weui-dialog__bd:first-child {
+  padding:0px 30rpx 1.7em;
+  
+}
+.page__ft{
+      padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+
+.searchbar-result{
+  border:none;
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}.b {
+ 
+  background-color: rgba(44, 196, 216, 0.644);
+  text-align: center; 
+   width: 20%;
+  margin-right: 10px
+  
+ 
+}
+
+.btn {  
+  width: 80%;  
+  padding: 20rpx 0;  
+  border-radius: 10rpx;  
+  text-align: center;  
+  margin: 40rpx 10%;  
+  background: #000;  
+  color: #fff;  
+}  
+  
+/*mask*/  
+.drawer_screen {  
+  width: 100%;  
+  height: 100%;  
+  position: fixed;  
+  top: 0;  
+  left: 0;  
+  z-index: 1000;  
+  background: #000;  
+  opacity: 0.5;  
+  overflow: hidden;  
+}  
+  
+/*content*/  
+.drawer_box {  
+  width: 650rpx;  
+  overflow: hidden;  
+  position: fixed;  
+  top: 50%;  
+  left: 0;  
+  z-index: 1001;  
+  background: #FAFAFA;  
+  margin: -150px 50rpx 0 50rpx;  
+  border-radius: 3px;  
+}  
+  
+.drawer_title{  
+  padding:15px;  
+  font: 20px "microsoft yahei";  
+  text-align: center;  
+}  
+.drawer_content {  
+  height: 210px;  
+  overflow-y: scroll; /*超出父盒子高度可滚动*/  
+}  
+  
+.btn_ok{  
+  padding: 10px;  
+  font: 20px "microsoft yahei";  
+  text-align: center;  
+  border-top: 1px solid #E8E8EA;  
+  color: #3CC51F; 
+  width: 50%;display:inline-block; 
+}  
+  
+.top{  
+    padding-top:8px;  
+}  
+.bottom {  
+    padding-bottom:8px;  
+}  
+.title {  
+    height: 30px;  
+    line-height: 30px;  
+    width: 160rpx;  
+    text-align: center;  
+    display: inline-block;  
+    font: 300 28rpx/30px "microsoft yahei";  
+}  
+  
+.input_base {  
+    border: 2rpx solid #ccc;  
+    padding-left: 10rpx;  
+    margin-right: 50rpx;  
+}  
+.input_h30{  
+    height: 30px;  
+    line-height: 30px;  
+}  
+.input_h60{  
+    height: 60px;  
+}  
+.input_view{  
+    font: 12px "microsoft yahei";  
+    background: #fff;  
+    color:#000;  
+    line-height: 30px;  
+}  
+  
+input {  
+    font: 12px "microsoft yahei";  
+    background: #fff;  
+    color:#000 ;  
+}  
+radio{  
+    margin-right: 20px;  
+}  
+.grid { display: -webkit-box; display: box; }  
+.col-0 {-webkit-box-flex:0;box-flex:0;}  
+.col-1 {-webkit-box-flex:1;box-flex:1;}  
+.fl { float: left;}  
+.fr { float: right;}
+.max{ color:  rgba(44, 196, 216, 0.644);}
+.hight{margin-top: 30rpx; margin-bottom: 30rpx;margin-left: 20rpx;margin-right: 10rpx}
+.chose{text-align: right }

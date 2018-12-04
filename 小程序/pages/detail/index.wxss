@@ -1,0 +1,7 @@
+
+.btn {
+  width: 100%;
+  margin-top: 30rpx;
+  background-color: rgba(44, 196, 216, 0.644);
+  color: #FFF;
+}

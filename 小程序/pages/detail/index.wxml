@@ -1,0 +1,16 @@
+ 
+  <view class='weui-form-item' wx:for="{{results}}">
+    
+          <!-- <view class="weui-form-preview__label">{{item.questiontxt}}</view>
+          -->
+   
+   
+<navigator class="weui-form-preview__label" url="../third/index?objecttxt={{item.questiontxt}}&objectid={{item.questionsid}}" >
+ <button class='btn'  >  {{item.questiontxt}}
+    </button>
+</navigator>   
+   
+   
+  </view>
+
+  

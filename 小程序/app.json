@@ -1,0 +1,45 @@
+{
+  "pages":[
+    
+    "pages/home/index",
+    "pages/detail/index",
+    "pages/third/index",
+    "pages/index/index",
+    "pages/list/index",
+    "pages/listnew/index",
+    "pages/account/feedback/feedback",
+    "pages/account/contact/index",
+      "pages/logs/logs"
+  ],"window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3891f8",
+    "navigationBarTitleText": "办公环境问题反馈",
+    "navigationBarTextStyle": "rgba(44, 196, 216, 0.644)"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#318efb",
+    "borderStyle": "#3891f8",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "image/icon_API.png",
+        "selectedIconPath": "image/icon_API_HL.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/listnew/index",
+        "iconPath": "image/list.png",
+        "selectedIconPath": "image/list1.png",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "image/wechat.png",
+        "selectedIconPath": "image/wechatHL.png",
+        "text": "我"
+      }
+    ]
+  }
+}

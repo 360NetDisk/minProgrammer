@@ -1,0 +1,181 @@
+<view class="item_nav_set">
+  <view catchtap='item_nav_set_list_display' data-index='0' class="item_nav_set_list {{item_nav_set_list_light[0]}}">
+    <view>待处理</view>
+  </view>
+  <view catchtap='item_nav_set_list_display' data-index='1' class="item_nav_set_list {{item_nav_set_list_light[1]}}">
+    <view>已解决</view>
+  </view>
+</view>
+<view class="item_nav_set_list_content {{sort_status[0]}}">
+  <view data-index='0_0' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[0][0]}}'>zhy50</view>
+  <view data-index='0_1' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[0][1]}}'>zhy51</view>
+  <view data-index='0_2' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[0][2]}}'>zhy52</view>
+  <view data-index='0_3' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[0][3]}}'>all</view>
+</view>
+<view class="item_nav_set_list_content {{sort_status[1]}}">
+  <view data-index='1_0' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[1][0]}}'>zhy50</view>
+  <view data-index='1_1' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[1][1]}}'>zhy51</view>
+  <view data-index='1_2' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[1][2]}}'>zhy52</view>
+  <view data-index='1_3' catchtap='item_nav_set_list_content_display' class='{{item_nav_set_list_content_light[1][3]}}'>all</view>
+</view>
+
+
+<view class="box">
+  <view class="c-minheight wx-view_section" data-c_e_id="wx_view_1295b15a" wx:for="{{results}}" wx:for-index='key'>
+    <view class="commentlistitem" data-c_e_id="wx_view_16d0f86f">
+      <view class="c-minheight wx-view_WnUrtw" data-c_e_id="wx_view_66505bdf">
+        <!-- <view class="wx-view_F9ISUC" data-c_e_id="wx_view27217bec">   -->
+
+        <!-- <navigator name="tex" > class="wx-text_71u3gA"   -->
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text5fe6919d">用户名： {{item.name}}  联系方式：{{item.phone}}</text>
+
+        <!-- </navigator>   -->
+        <!-- </view >  -->
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb"> 位置：{{item.questionid}}{{item.questionaa}}  </text>
+        <text  class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb">问题描述： {{item.questiontext}}  </text>
+
+        <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+          </view>
+
+
+        </view>
+
+        <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+
+          </view>
+          <text class="listitem_creattime" data-c_e_id="wx_text8c8804b3"> {{item.createdAt}}  </text>
+          
+        </view>
+    <!-- <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+          </view>
+        </view> -->
+   <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+     
+          <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb"  decode="{{true}}">  回复内容           </text>
+          
+        </view>
+        <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <text class="c-block wx-text_kGXxsa" decode="{{true}}" data-c_e_id="wx_text_39bacddb"> &nbsp;&nbsp;&nbsp;{{item.replay}} </text>
+         
+          
+        </view>
+          
+          
+   <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+          </view>
+
+
+        </view>
+
+        <!-- <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+
+          </view> -->
+        
+          <input placeholder="输入回复的内容"  bindinput="re"  name="replay" value=""> </input> 
+
+          <view class="weui-media-box__info__meta weui-media-box__info__operate">
+          <icon type="success_circle" size="16"></icon>
+       
+        <text class="del"  catchtap="voteTitle" id="{{item.objectId}}" >提交回复</text> </view>
+        <view class="weui-media-box__info__meta weui-media-box__info__operate">
+     
+          <icon type="cancel" size="16"></icon>
+          <text class="del" catchtap="delete" id="{{item.objectId}}">解决</text> </view>
+
+          
+          
+       
+          
+         
+
+      </view>
+    </view>
+
+  </view>
+</view>
+
+
+
+<view class="bo">
+  <view class="c-minheight wx-view_section" data-c_e_id="wx_view_1295b15a" wx:for="{{result}}" wx:for-index='key'>
+    <view class="commentlistitem" data-c_e_id="wx_view_16d0f86f">
+      <view class="c-minheight wx-view_WnUrtw" data-c_e_id="wx_view_66505bdf">
+        <!-- <view class="wx-view_F9ISUC" data-c_e_id="wx_view27217bec">   -->
+
+        <!-- <navigator name="tex" > class="wx-text_71u3gA"   -->
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text5fe6919d">用户名： {{item.name}} 联系方式:{{item.phone}}</text>
+
+        <!-- </navigator>   -->
+        <!-- </view >  -->
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb"> 位置：{{item.questionid}}{{item.questionaa}}  </text>
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb">问题描述： {{item.questiontext}}  </text>
+        <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb">解决者： {{item.deletename}}  </text>
+        <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+          </view>
+
+
+        </view>
+
+        <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">
+          <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">
+
+          </view>
+          <text class="listitem_creattime" data-c_e_id="wx_text8c8804b3"> {{item.createdAt}}  </text>
+        </view>
+
+        <!-- <view class="weui-media-box__info__meta weui-media-box__info__operate">
+                <icon type="cancel dels" size="16"></icon>
+                <text class="del" catchtap="delete" id="{{key}}" >解决</text> </view>
+     
+
+     </view> -->
+      </view>
+    </view>
+  </view>
+</view>
+
+
+<!-- <view class="c-minheight wx-view_section" data-c_e_id="wx_view_1295b15a" wx:for="{{result}}" wx:for-index='key'> 
+    <view class="commentlistitem" data-c_e_id="wx_view_16d0f86f">
+    <view class="c-minheight wx-view_WnUrtw" data-c_e_id="wx_view_66505bdf"> 
+    <!-- <view class="wx-view_F9ISUC" data-c_e_id="wx_view27217bec">   -->
+
+<!-- <navigator name="tex" > class="wx-text_71u3gA"   -->
+<!-- <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text5fe6919d" >用户：{{item.username}}  </text>  
+    
+    <!-- </navigator>   -->
+<!-- </view >  -->
+<!-- <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" > 位置：{{item.questionid}}{{item.questionaa}}  </text> 
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" >问题描述： {{item.questiontext}}  </text> 
+    <text class="c-block wx-text_kGXxsa" data-c_e_id="wx_text_39bacddb" >解决者： {{item.deletename}}  </text> 
+   <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">  
+    <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f"> 
+    </view>  
+
+            
+    </view>
+
+  <view class="comment_operate" data-c_e_id="wx_view_cf5ce19f">  
+    <view class="wx-view_h6iSr9" data-c_e_id="wx_view3a8d0d4f">    
+   
+    </view>  <text class="listitem_creattime" data-c_e_id="wx_text8c8804b3"> {{item.createdAt}}  
+    
+    </text> 
+    </view>
+</view>
+    </view> 
+</view>   -->
+
+<!-- 
+<view class='pocket_input' style='bottom:{{height}}px;' wx:if="{{inputShow}}" >
+
+<input type='text' placeholder-style='input-placeholder' cursor='{{cursor_position}}' class='input_style' placeholder='随便说点什么吧~(30字以内哦)' focus='{{focus}}' cursor-spacing="2" adjust-position='{{adjust_position}}' maxlength='30' bindfocus="bindfocus" bindblur="bindblur" bindconfirm="bindconfirm"></input>
+
+</view> -->
+ <!-- <text>你好！\t七月流火啊！\n我在下一行</text> -->
